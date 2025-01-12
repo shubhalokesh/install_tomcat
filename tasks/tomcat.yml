@@ -1,0 +1,5 @@
+---
+- hosts: Java_server
+  become: true
+  roles: 
+- install_tomact

@@ -1,0 +1,11 @@
+---
+# tasks file for install_tomcat
+
+- name: Update APT cache
+  apt:
+    update_cache: yes
+
+- name: Install Tomcat 10
+  apt:
+    name: tomcat10
+    state: present
